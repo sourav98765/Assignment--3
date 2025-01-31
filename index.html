@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -9,8 +9,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <style>
+        .sora {
+            font-family: "Sora", serif;
+            font-optical-sizing: auto;
+
+        }
+
+        .green {
+            color: green;
+        }
+    </style>
+
     <!-- Fontawesome cdn -->
     <script src="https://kit.fontawesome.com/bbfc4be646.js" crossorigin="anonymous"></script>
+    <!-- daisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -19,6 +34,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'green': '#0080001',
                     },
                 },
             },
@@ -26,7 +42,156 @@
     </script>
 </head>
 
-<body>
+<body class="sora">
+    <header>
+        <nav class="mx-5 lg:mx-10  ">
+            <!-- navbar phone
+            <div class=" flex lg:hidden">
+                <img class="mx-4 mt-3" src="./c2-assets/leaf.png" alt="" />
+                <i class="fa-solid fa-bars green text-2xl"></i>
+                <br />
+                <div class="border border-[#179800]"></div>
+            </div> -->
+            <div class="navbar bg-base-100 ">
+                <div class="flex-auto hidden lg:inline">
+
+                    <a class="btn btn-ghost text-xl lg:ml-3 sm:w-1/2"><img src="./c2-assets/logo-header.png" alt=""></a>
+
+                </div>
+                <div class="lg:hidden">
+                    <img class="mx-4 mt-3" src="./c2-assets/leaf.png" alt="" />
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Product</a></li>
+                        <li><a>Services</a></li>
+                        </li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end hidden lg:flex gap-5">
+                    <a href=""> <i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a class="btn px-8 py-3">Login</a>
+                    <a class="btn bg-lime-600 text-white px-8 py-3">Register</a>
+                </div>
+                <div class="navbar-end ml-8 lg:hidden">
+                    <i class="fa-solid fa-bars green text-2xl"></i>
+                </div>
+            </div>
+            <div class="border border-[#179800] lg:hidden"></div>
+        </nav>
+        <!-- header text -->
+        <div>
+            <div class="hero bg-gradient-to-t from-yellow-100 to-white min-h-screen mt-6">
+                <div class="hero-content text-center">
+                    <div class="max-w">
+                        <h1 class="font-semibold lg:text-[56px] text-[32px]">Freshness <span class="green"> You Can <br>
+                                Count </span>On, Prices You’ll Love!</h1>
+                        <p class="py-6 ">
+                            Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>staples,
+                            we’ve
+                            got you covered every day!
+                        </p>
+                        <img class="max-w-100%" src=".//c2-assets/hero-vegetables.png" alt="">
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+    <!-- card -->
+    <main>
+        <section>
+            <div class="px-4 lg:px-28 py-28">
+                <h1 class="pb-9 font-semibold lg:text-[56px] text-[32px] green ">Services!</h1>
+                <!-- service Card container -->
+                <div class=" gap-3 items-center grid grid-cols-1 lg:grid-cols-3">
+                    <!-- card 1-->
+                    <div class="space-y-5 bg-[#EFEBE3] lg:w-[424px] h-[400px] rounded-lg items-center text-center">
+
+
+                        <div class=" pl-32 pt-1">
+                            <div class=" pt-6 pl-3 w-[150px] h-[150px] rounded-full bg-white">
+                                <div class=" pl-3 w-auto">
+                                    <img class="w-auto" src="./c2-assets/service.png" />
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="font-semibold text-2xl">24/7 Services </h3>
+                        <p class="p-5">Our 24-hour food service ensures that you never have to worry about finding a
+                            meal, no matter the time of day or night. Whether you're craving a late-night snack, an
+                            early breakfast. </p>
+                    </div>
+                    <!-- card 2-->
+                    <div class="space-y-5 bg-[#EFEBE3] lg:w-[424px] h-[400px] rounded-lg items-center text-center ">
+
+
+                        <div class=" pl-32 pt-1">
+                            <div class=" pt-6 pl-3 w-[150px] h-[150px] rounded-full bg-white">
+                                <div class=" pl-3 w-auto">
+                                    <img class="w-auto" src="./c2-assets/delivery.png" />
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="font-semibold text-2xl">Fast Delivery </h3>
+                        <p class="p-5">The first food delivery service dates back to the late 19th century. One of the
+                            earliest recorded instances was in 1889 in Naples, Italy, when King Umberto .</p>
+                    </div>
+
+                    <!-- card 3-->
+                    <div class="space-y-5 bg-[#EFEBE3] lg:w-[424px] h-[400px] rounded-lg items-center text-center">
+
+
+                        <div class=" pl-32 pt-1">
+                            <div class=" pt-6 pl-3 w-[150px] h-[150px] rounded-full bg-white">
+                                <div class=" pl-3 w-auto">
+                                    <img class="w-auto" src="./c2-assets/healthy.png" />
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="font-semibold text-2xl">Healthy Products </h3>
+                        <p class="p-5">Healthy products are foods and items that promote overall well-being and provide
+                            essential nutrients to the body. These include fresh fruits and vegetables, whole grains,
+                            lean proteins, nuts, seeds, and dairy </p>
+                    </div>
+
+
+
+
+                </div>
+        </section>
+        <!-- Popular Products -->
+        <section>
+            <div class="px-4 lg:px-28 py-28 bg-[#EFEBE3]">
+                <div>
+                    <h1 class="pb-9 font-semibold lg:text-[36px] green ">Popular Products</h1>
+                </div>
+                <div>
+                    <div class="card bg-base-100 w-96 shadow-xl bg-gradient-to-t from-white to-lime-500">
+                        <div class="card-body">
+                            <h2 class="card-title text-white">30% off</h2>
+                            <p>Discover a world of treats, toys, and essentials handpicked for </p>
+                            <div class="card-actions justify-start">
+                                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg pl-5">Buy Now</button>
+                            </div>
+                            <div class="card-actions justify-end">
+                                <img src="./c2-assets/vegetable-offer.png" alt="">
+                            </div>
+                        </div>
+                        
+
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
 
 </body>
 
